@@ -1,2 +1,2 @@
 # MITGPT-Tally
-print(NEGROS IN THE HOUSE)
+print("NEGROS IN THE HOUSE")
