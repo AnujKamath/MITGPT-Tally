@@ -41,8 +41,12 @@ const CodeEditor = () => {
             onChange={(value) => setValue(value)}
           />
         </Box>
-        <Output editorRef={editorRef} language={language} />
-        
+        {/* <Output editorRef={editorRef} language={language} /> */}
+        <Output
+        editorRef={editorRef}
+        language={language} // Language ID for Judge0 (e.g., Python, JavaScript)
+        // testCases={question.test_cases}
+      />
         </VStack>
     </Box>
   );
