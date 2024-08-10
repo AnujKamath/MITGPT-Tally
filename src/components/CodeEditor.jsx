@@ -8,7 +8,7 @@ import Output from "./Output";
 const CodeEditor = () => {
   const editorRef = useRef();
   const [value, setValue] = useState("");
-  const [language, setLanguage] = useState({language});
+  const [language, setLanguage] = useState("javascript");
 
   const onMount = (editor) => {
     editorRef.current = editor;
@@ -41,13 +41,8 @@ const CodeEditor = () => {
             onChange={(value) => setValue(value)}
           />
         </Box>
-        {/* <Output editorRef={editorRef} language={language} /> */}
-
-      <Output
-        editorRef={editorRef}
-        language={language} // or any other language
-        testCases={question.test_cases}
-      />
+        <Output editorRef={editorRef} language={language} />
+        
         </VStack>
     </Box>
   );
