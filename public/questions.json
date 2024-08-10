@@ -1,0 +1,42 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "name": "Palindrome Check",
+      "question": "Given a string s, return true if it is a palindrome, otherwise return false. A palindrome is a string that reads the same forward and backward. It is also case-insensitive and ignores all non-alphanumeric characters.",
+      "test_cases": [
+        {
+          "input": "\"A man, a plan, a canal, Panama\"",
+          "expected": "true"
+        },
+        {
+          "input": "\"race a car\"",
+          "expected": "false"
+        },
+        {
+          "input": "\"No 'x' in Nixon\"",
+          "expected": "true"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Daily Temperatures",
+      "question": "You are given an array of integers temperatures where temperatures[i] represents the daily temperatures on the ith day. Return an array result where result[i] is the number of days after the ith day before a warmer temperature appears on a future day. If there is no day in the future where a warmer temperature will appear for the ith day, set result[i] to 0 instead.",
+      "test_cases": [
+        {
+          "input": "[73, 74, 75, 71, 69, 72, 76, 73]",
+          "expected": "[1, 1, 4, 2, 1, 1, 0, 0]"
+        },
+        {
+          "input": "[30, 40, 50, 60]",
+          "expected": "[1, 1, 1, 0]"
+        },
+        {
+          "input": "[30, 60, 90]",
+          "expected": "[1, 1, 0]"
+        }
+      ]
+    }
+  ]
+}
